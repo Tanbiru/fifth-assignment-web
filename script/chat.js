@@ -23,7 +23,7 @@
     
                     
                     if (currentAssigned === 0) {
-                        alert("All tasks are completed!");
+                        alert("Congrates!!! you have completed all the current task");
                     }
                 }
             });
