@@ -27,6 +27,35 @@
             Back to desk
         </button>
 </nav>
+<p class="text-xl font-bold mt-5">Blogs</p>
+<main class="w-full max-w-7xl">
+    <section class="flex flex-col gap-4">
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="text-sm font-normal mt-5">Interacting with the DOM in JavaScript allows you to dynamically select elements. You can choose elements using their ID, class, tag name, or even CSS selectors. While some methods only return a single item, other methods return a collection of items. All selections are crucial for content modification, event handling, and style changes on a webpage.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            <p class="text-sm font-normal mt-5">innerHTML, innerText, and textContent are all used to get or change the content inside an element. innerHTML includes HTML tags and content. innerText only gets or sets the visible text, ignoring hidden parts. textContent gets all the text, including hidden parts, and keeps the exact spacing. Each one is used depending on what kind of content you need to work with.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Question-3: What is event delegation in the DOM?</h3>
+            <p class="text-sm font-normal mt-5">Event delegation is a technique in JavaScript where you attach a single event listener to a parent instead of adding one to all of the individual child elements. The reason this works is that events bubble up in the DOM. This means, when clicking a child element, the event bubbles up to the parent, enabling you to handle the event for every child element without adding an event listener to each one. This proves to be significant where dynamic content comes into place which may surely be added</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="text-sm font-normal mt-5">Event bubbling is a mechanism in the DOM where an event that occurs on a child element travels up to its parent elements. For instance, when you click a button within a div, the event is first activated on the button and then bubbles up to the div, followed by the body, and continues until it reaches the top of the document. This feature enables event delegation, but it can occasionally lead to unexpected results. If necessary, you can prevent event bubbling by using event.stopPropagation().</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p class="text-sm font-normal mt-5">The document.createElement() function in JavaScript can be used to create elements, such as a div, p, or span. Using methods like appendChild() or insertBefore(), which insert the new element into a specified parent element, the element can be added to the DOM after it has been constructed. The parentNode.removeChild() function can be used to remove an element from its parent, or the remove() method can be applied straight to the element. The structure of the webpage can be dynamically altered using these techniques.</p>
+        </div>
+    </section>
+</main>
+ 
+                  
+          
+      
 <script src="script/chat.js"></script>
 </body>
 </html>
