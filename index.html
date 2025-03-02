@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard</title>
+    <title>Dev Board</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     </style>
 </head>
 <body class="poppins-thin bg-gray-100 h-screen flex flex-col items-center">
-    <!-- Navbar -->
+    
     <nav class="w-full max-w-7xl bg-white p-4 shadow-md flex justify-between items-center mt-8 rounded-lg">
             <div class="flex items-center gap-2">
                 <img src="./assets/logo.png" alt="">
@@ -33,9 +33,9 @@
     
     <main class="w-[90%] max-w-7xl bg-white p-6 rounded-lg shadow-md flex-1 flex mt-4">
         
-            <!-- Left Section: Task Assigned, Discover, Date, Tasks -->
+            
             <div class="w-3/4 flex flex-col">
-                <!-- Top Section -->
+                
                 <div class="flex gap-4 mb-4 items-center">
                     <div class="flex items-center gap-2 bg-gray-100 p-3 rounded-lg w-1/4">
                         <img src="./assets/checkbox.png" alt="">
@@ -45,10 +45,11 @@
                         </div>
                     </div>
                     
-                    <div class="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white px-4 py-3 rounded-lg text-lg font-semibold">
+                    <div id="discoverBox" class="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white px-4 py-3 rounded-lg text-lg font-semibold cursor-pointer">
                         <img src="./assets/board.png" alt="" class="h-20 w-20">
                         <span>Discover Something <br> New Today!</span>
                     </div>
+                    
                     
                     <div class=" bg-gray-100 p-3 rounded-lg w-1/4 text-center">
                         <div class="flex justify-center">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 
-                <!-- Task Cards -->
+              
                 <div class="grid grid-cols-3 gap-4 h-[60vh] overflow-auto">
                     <div class="task-card bg-gray-100 p-4 rounded-lg" data-task="Fix Mobile Button Issue">
                         <p class="text-sm font-medium text-[#00303C]">ShopEase</p>
@@ -109,7 +110,7 @@
                 </div>
             </div>
             
-            <!-- Right Section: Activity Log -->
+            
             <div class="w-1/4 p-4 border rounded-lg bg-white shadow-md h-full ml-4">
                 <div class="flex justify-between items-center">
                     <h2 class="font-bold text-xl">Activity Log</h2>
@@ -122,6 +123,9 @@
 
     
     
+    
+    
     <script src="script/chat.js"></script>
+    
 </body>
 </html>

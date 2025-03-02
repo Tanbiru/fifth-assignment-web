@@ -1,5 +1,4 @@
-
-        document.querySelectorAll('.complete-btn').forEach(button => {
+      document.querySelectorAll('.complete-btn').forEach(button => {
             button.addEventListener('click', function() {
                 if (!this.disabled) {
                     let task = this.closest('.task-card').getAttribute('data-task');
@@ -19,7 +18,10 @@
                     this.classList.remove('bg-blue-500');
                     this.disabled = true;
     
-                    // Alert if no tasks are left
+                 
+                    alert("Board updated successfully!");
+    
+                    
                     if (currentAssigned === 0) {
                         alert("All tasks are completed!");
                     }
@@ -30,4 +32,13 @@
         document.getElementById('clearHistory').addEventListener('click', function() {
             document.getElementById('activityLog').innerHTML = '';
         });
-    
+
+        document.getElementById('discoverBox').addEventListener('click', function() {
+            window.location.href = "blog.html";
+        });
+
+        // go back
+        function goBack() {
+            window.history.back();
+        }
+   
